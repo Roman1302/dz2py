@@ -5,4 +5,20 @@
 
 print("***Программа вывода набора произвежений от 1 до N***")
 
-n=input("Введите целое число N: ")
+
+
+def array(numer):
+    lis=[]
+    res = 1
+    for i in range(numer) :
+        res *= (i+1)
+        # print(res)
+        lis.append(res)
+        # print(lis)
+    return lis
+
+try:
+    num=int(input("\nВведите целое число N: "))
+    print("\n", array(num))
+except:
+    print("\nНужно вводить число!")
